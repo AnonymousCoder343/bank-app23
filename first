@@ -1,0 +1,27 @@
+Recusive Algorithm:
+Algorithm Fibonacci(n) 
+{ 
+if (n <= 1) 
+return n; 
+else 
+return Fibonacci(n - 1) + Fibonacci(n - 2); } 
+
+
+
+Non-Recursive Algorithm: 
+1 Algorithm fibonacci(n) 
+2 //Calculate nth fibonacci number 
+3 { 
+4 if(n<=1) 
+5 write (n); 
+6 else 
+7 { 
+8 fnm2:=0; fnm1:=1; 
+9 for i:=2 to n do 
+10 { fn:=fnm1+fnm2; 
+11 fnm2:=fnm1; 
+12 fnm1:=fn; 
+13 } 
+14 write(fn) 
+15 } 
+16 } 
