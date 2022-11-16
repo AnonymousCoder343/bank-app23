@@ -1,0 +1,12 @@
+Algorithm GreedyKnapsack(M,N) 
+//p[1:n] and w[1:n] contain the profits and weights respectively 
+//of the n objects ordered such that p[i]/w[i]>=p[i+1]/w[i+1] 
+//m is the knapsack size and x[1:n] is the solution vector. 
+{ for i:=1 to n do x[i]:=0.0; // initialize x 
+U:=m; 
+for i:=1 to n do 
+{ if (w[i]>U) then break; 
+x[i]:=1.0; 
+U=U-w[i]; 
+} if(i<=n) then x[i]:=U/w[i]; 
+} 
